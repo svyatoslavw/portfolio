@@ -1,0 +1,11 @@
+{
+  "title": "Мої навички:",
+  "description": {
+    "l1": "Хороший досвід роботи зі стилями, їх модулями та препроцесорами SASS/SCSS.",
+    "l2": "Хороший досвід розробки складних та адаптивних веб-сайтів/веб-додатків. Розробка веб-програм на React.js/Next.js (TS, Redux, Zustand, RTK Query, Tanstack Query, Apollo).",
+    "l3": "Просунутий HTML (HTML5 API, хороше розуміння семантичних тегів), CSS (+SCSS), JavaScript (ES6+).",
+    "l4": "Базове розуміння серверного JavaScript, працював у Nest.js. (GraphQL, JWT, Prisma, Sequalize).",
+    "l5": "Досвід роботи з менеджерами завдань. (Notion, Trello).",
+    "l6": "Досвід використання графічних редакторів: Figma, Adobe Photoshop."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Мои навыки:",
+  "description": {
+    "l1": "Хороший опыт работы со стилями, их модулями и препроцессорами SASS/SCSS.",
+    "l2": "Хороший опыт разработки сложных и адаптивных веб-сайтов/веб-приложений. Разработка веб-приложений на React.js/Next.js (TS, Redux, Zustand, RTK Query, Tanstack Query, Apollo).",
+    "l3": "Продвинутый HTML (HTML5 API, хорошее понимание семантических тегов), CSS (+SCSS), JavaScript (ES6+).",
+    "l4": "Базовое понимание серверного JavaScript, работал в Nest.js. (GraphQL, JWT, Prisma, Sequalize).",
+    "l5": "Опыт работы с менеджерами задач. (Notion, Trello).",
+    "l6": "Опыт использование графических редакторов: Figma, Adobe Photoshop."
+  }
+}
