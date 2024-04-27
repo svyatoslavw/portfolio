@@ -15,8 +15,8 @@
     gap: 1rem;
     z-index: 5;
     padding: 0.5rem 1.2rem;
-    padding-right: 1rem;
     border: 2px solid darken($cyan, 15%);
+    border-radius: 10px;
     box-shadow:
       4px 4px 0px -1px #1a1a1a,
       4px 4px 0px 1px darken($cyan, 20%);
@@ -24,19 +24,23 @@
     background: linear-gradient(to right, darken($cyan, 10%) 50%, #111111 50%);
     background-size: 200% 100%;
     background-position: right bottom;
+    font-size: 1rem;
     font-weight: 600;
     &:hover {
       background-position: left bottom;
       color: black;
     }
-    @include lg {
-      font-size: 32px;
-      padding: 1rem 2rem;
-    }
   }
   .image {
     object-fit: contain;
-    padding-right: 0.8rem;
-    border-right: 1px solid #4d4d4d;
+    border-radius: 8px;
+  }
+}
+
+@include md {
+  .stack {
+    .item {
+      padding: 0.5rem 1rem;
+    }
   }
 }

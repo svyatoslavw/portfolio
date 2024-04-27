@@ -10,9 +10,9 @@ const Greeting = () => {
 
   return (
     <motion.div variants={slideInFromLeft(0)} className={styles.info}>
-      <h2 className={styles.hi}>{t("greeting")} </h2>
+      <h2 className={styles.hi}>{t("greeting")}</h2>
       <TypeAnimation
-        sequence={["Sviatoslav Stepanov", 3000, ""]}
+        sequence={["Sviatoslav.", 3000, ""]}
         wrapper="strong"
         cursor={true}
         repeat={Infinity}

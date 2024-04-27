@@ -18,6 +18,7 @@ const Header = () => {
         [styles.active]: isShow
       })}
     >
+      <img src="/logo.svg" draggable={false} alt="header logo" height={40} width={40} />
       <section className={isShow ? styles.menu : styles.links}>
         {links.map((link) => (
           <a key={link.href} href={link.href} onClick={() => setIsShow(false)}>

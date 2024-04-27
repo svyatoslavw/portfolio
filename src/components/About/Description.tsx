@@ -7,7 +7,7 @@ const Description = () => {
 
   return (
     <div className={styles.description}>
-      <p>{t("title")}</p>
+      <p className={styles.title}>{t("title")}</p>
       <p>{t("description.p1")}</p>
       <p>{t("description.p2")}</p>
       <p>{t("description.p3")}</p>

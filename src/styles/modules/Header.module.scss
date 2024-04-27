@@ -2,15 +2,15 @@
 
 .container {
   position: sticky;
-  height: 4rem;
+  height: 3.2rem;
   background-color: rgba(3, 0, 20, 0.1);
   backdrop-filter: blur(10px);
   z-index: 50;
   display: flex;
   top: 0;
+  padding: 0 15vw;
   align-items: center;
-  justify-content: center;
-  padding: 0 10px;
+  justify-content: space-between;
   .burger {
     display: none;
     cursor: pointer;
@@ -27,23 +27,22 @@
     display: flex;
     padding: 8px 20px;
     border-radius: 16px;
-    background-color: #000000d2;
     align-items: center;
-    border: 2px solid darken($cyan, 15%);
     gap: 2rem;
-  }
-
-  a {
-    cursor: pointer;
-    text-decoration: none;
-    @include heading(18px);
-    @include transition(0.3s);
-    padding: 3px 0;
-    font-weight: normal;
-    color: $text;
-    text-shadow: none;
-    &:hover {
-      color: $cyan;
+    a {
+      text-decoration: none;
+      @include heading(18px);
+      @include transition(0.3s);
+      padding: 3px 0;
+      font-size: 1rem;
+      margin: 0;
+      font-weight: normal;
+      color: $text;
+      text-shadow: none;
+      &:hover {
+        cursor: pointer;
+        color: $cyan;
+      }
     }
   }
 }
@@ -62,6 +61,12 @@
     padding: 4px;
     outline: none;
     border: none;
+    transition: all 0.15s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background-color: #232323;
+      border-radius: 4px;
+    }
   }
   .activeButton {
     color: $cyan;
@@ -95,7 +100,7 @@
   left: 0;
   top: 0;
   a {
-    font-size: 3rem;
+    font-size: 1.6rem;
   }
 }
 

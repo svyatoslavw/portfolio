@@ -1,5 +1,5 @@
 import { About } from "./components/About/About"
-import { Footer } from "./components/Footer/Footer"
+import { Github } from "./components/Github/Github"
 import { Home } from "./components/Home/Home"
 import { Projects } from "./components/Projects/Projects"
 import { Stack } from "./components/Stack/Stack"
@@ -12,7 +12,7 @@ const Page = () => {
       <About />
       <Stack />
       <Projects />
-      <Footer />
+      <Github />
     </main>
   )
 }

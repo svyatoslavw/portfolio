@@ -17,7 +17,8 @@
   font-weight: 400;
 
   color: $text;
-  background-color: black;
+  background: #020024;
+  background: linear-gradient(0deg, #020118 0%, #0d021d 50%, #10021b 100%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,8 +28,8 @@
 
 //----------SCROLL----------//
 * {
-  --scroll-track-color: #000000;
-  --scroll-thumb-color: #222222;
+  --scroll-track-color: #10021d;
+  --scroll-thumb-color: #250147;
   --scroll-size: 8px;
 }
 
@@ -38,7 +39,6 @@
 
 *::-webkit-scrollbar-track {
   background: var(--scroll-track-color);
-  border-radius: 8px;
 }
 
 *::-webkit-scrollbar-thumb {

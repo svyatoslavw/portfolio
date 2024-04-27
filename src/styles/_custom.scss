@@ -2,8 +2,7 @@
 
 @mixin container {
   width: 70vw;
-  min-height: 100lvh;
-  padding: 3rem 0;
+  padding: 1rem 0;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -11,30 +10,30 @@
   gap: 3rem;
   @include lg {
     width: 90vw;
+    gap: 1.2rem;
   }
 
   @include md {
-    width: 90vw;
-  }
-
-  @include sm {
-    width: 90vw;
+    gap: 0.8rem;
   }
 }
 
 @mixin heading($size: 60px, $color: $cyan) {
   position: relative;
   margin: 0 auto;
+  margin-top: 1.8rem;
   padding: 0 0.5rem;
   font-size: $size;
   font-weight: 600;
   overflow: hidden;
   cursor: default;
+  text-align: center;
   @include text-border;
   &::before {
     content: "";
     position: absolute;
     bottom: 0;
+    border-radius: 20px;
     left: -100%;
     width: 100%;
     height: 4px;
@@ -63,9 +62,9 @@
   color: $secondary;
 }
 
-@mixin border-block($border: 3px, $primary: #00ffbf, $secondary: #08dcc4) {
+@mixin border-block($border: 4px, $primary: #a855f7, $secondary: #8844c9) {
   --border-angle: 0turn;
-  --main-bg: conic-gradient(from var(--border-angle), black, black);
+  --main-bg: conic-gradient(from var(--border-angle), #0d021d, #0d021d);
 
   border: solid $border transparent;
   border-radius: 0.3em;

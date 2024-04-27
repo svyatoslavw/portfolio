@@ -4,17 +4,16 @@ import { useInView } from "react-intersection-observer"
 import styles from "@/styles/modules/Home.module.scss"
 import { slideInFromRight } from "@/utits/animations/motion"
 
-const ReactIcon = () => {
+const HeroIcon = () => {
   const { ref, inView } = useInView({
     triggerOnce: true
   })
   const variants = {
     hidden: {
-      rotate: 0
+      opacity: 0
     },
     visible: {
-      rotate: 360,
-      transition: { duration: 20, repeat: Infinity }
+      opacity: 1
     }
   }
 
@@ -24,12 +23,12 @@ const ReactIcon = () => {
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={variants}
-        transition={{ duration: 20, repeat: Infinity }}
+        transition={{ duration: 2 }}
       >
-        <img src="/react-dark.png" alt="work icons" height={400} width={450} />
+        <img src="/hero.svg" alt="work icons" draggable={false} height={450} width={510} />
       </motion.div>
     </motion.div>
   )
 }
 
-export { ReactIcon }
+export { HeroIcon }
