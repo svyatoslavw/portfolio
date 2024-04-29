@@ -24,9 +24,9 @@
   }
 
   .skills {
-    padding: 0.5rem;
+    padding: 0.3rem;
     width: 100%;
-    h3 {
+    .title {
       font-size: 2.2rem;
       font-weight: 500;
       @include sm {
@@ -38,9 +38,6 @@
       li {
         margin: 0.5rem 0;
         list-style-type: disc;
-        @include lg {
-          font-size: 1rem;
-        }
       }
     }
     @include border-block;
@@ -48,8 +45,7 @@
 }
 @include lg {
   .information {
-    display: flex;
-    flex-direction: column;
+    display: block;
     padding: 1.8rem;
     .skills {
       margin-top: 1rem;
@@ -57,14 +53,38 @@
   }
 }
 
+@include md {
+  .information {
+    display: block;
+    .description {
+      font-size: 1rem;
+      .title {
+        font-size: 1.5rem;
+      }
+    }
+    .skills {
+      font-size: 1rem;
+      .title {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
 @include sm {
   .information {
-    display: flex;
-    flex-direction: column;
-    font-size: 2.2rem;
-    padding: 2rem;
+    display: block;
+    .description {
+      font-size: 0.8rem;
+      .title {
+        font-size: 1.2rem;
+      }
+    }
     .skills {
-      margin-top: 1rem;
+      font-size: 0.8rem;
+      .title {
+        font-size: 1.2rem;
+      }
     }
   }
 }

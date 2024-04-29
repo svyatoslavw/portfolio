@@ -37,11 +37,11 @@
       font-size: 1rem;
       margin: 0;
       font-weight: normal;
-      color: $text;
+      color: white;
       text-shadow: none;
       &:hover {
         cursor: pointer;
-        color: $cyan;
+        color: white;
       }
     }
   }
@@ -92,16 +92,23 @@
 .menu {
   display: flex;
   flex-direction: column;
-  width: 101%;
+  width: 100dvw;
+  overflow-x: hidden;
   height: 100dvh;
   justify-content: center;
+  align-items: center;
   background-color: #0a0a0a;
   position: absolute;
   left: 0;
   top: 0;
   a {
-    font-size: 1.6rem;
+    color: $cyan;
+    font-size: 1.2rem;
   }
+}
+
+.menu div {
+  margin-top: 1rem;
 }
 
 @include lg {

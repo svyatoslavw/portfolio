@@ -20,7 +20,8 @@
   .bg-secondary {
     background-color: #fff;
     border: 0.5rem solid transparent;
-    &:hover {
+    &:hover,
+    &:active {
       @include border-block(0.5rem);
     }
   }
@@ -28,12 +29,17 @@
   .bg-primary {
     background-color: darken($cyan, 10%);
     border: 0.5rem solid transparent;
-    &:hover {
+    &:hover,
+    &:active {
       @include border-block(0.5rem, #c7c7c7, #fff);
     }
   }
   @include lg {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 4rem;
+    gap: 2rem;
+  }
+
+  @include sm {
+    gap: 1rem;
   }
 }

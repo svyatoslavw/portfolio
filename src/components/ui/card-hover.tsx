@@ -58,7 +58,7 @@ export const DirectionAwareHover = ({
     <motion.div
       onMouseEnter={handleMouseEnter}
       ref={ref}
-      className={cn(styles.container, className)}
+      className={cn(styles.cardContainer, className)}
     >
       <AnimatePresence mode="wait">
         <motion.div className={styles.content} initial="initial" whileHover={direction} exit="exit">

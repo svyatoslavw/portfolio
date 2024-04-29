@@ -5,13 +5,14 @@
   padding: 2vh 0;
   text-align: center;
   color: #fff;
-  a {
+  .link {
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 2px;
     cursor: pointer;
     @include transition(0.15s);
     color: white;
-    &:hover {
+    &:hover,
+    &:active {
       color: $cyan;
     }
   }

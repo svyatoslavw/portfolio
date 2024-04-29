@@ -20,13 +20,14 @@
     box-shadow:
       4px 4px 0px -1px #1a1a1a,
       4px 4px 0px 1px darken($cyan, 20%);
-    @include transition(0.3s, ease-out);
+    @include transition(0.25s, ease-out);
     background: linear-gradient(to right, darken($cyan, 10%) 50%, #111111 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     font-size: 1rem;
     font-weight: 600;
-    &:hover {
+    &:hover,
+    &:active {
       background-position: left bottom;
       color: black;
     }
@@ -41,6 +42,7 @@
   .stack {
     .item {
       padding: 0.5rem 1rem;
+      font-size: 0.8rem;
     }
   }
 }

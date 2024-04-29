@@ -7,12 +7,12 @@ const Ticker = () => {
         <div>
           {" "}
           • Developer javascript • <span> Developer javascript </span> • Developer javascript •{" "}
-          <span> Developer javascript </span>
+          <span> Developer javascript •</span>
         </div>
         <div>
           {" "}
           • Developer javascript • <span> Developer javascript </span> • Developer javascript •{" "}
-          <span> Developer javascript </span>
+          <span> Developer javascript •</span>
         </div>
       </div>
     </section>

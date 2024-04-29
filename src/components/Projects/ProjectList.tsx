@@ -7,13 +7,13 @@ import { frontend_projects } from "@/utits/constants/projects.constants"
 
 const ProjectList = () => {
   const { ref, inView } = useInView({
-    triggerOnce: true
+    triggerOnce: false
   })
   return (
     <article className={styles.projects} ref={ref}>
       {frontend_projects.map((project, index) => {
         const isLeftColumn = index % 2 === 0
-        const animation = isLeftColumn ? slideInFromLeft(0.1) : slideInFromRight(0.1)
+        const animation = isLeftColumn ? slideInFromLeft(index / 10) : slideInFromRight(index / 10)
         return (
           <ProjectItem
             animation={animation}

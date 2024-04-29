@@ -19,7 +19,6 @@ const ProjectItem = ({ project, animation, inView }: IProjectItem) => {
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={animation}
-        custom={0.1}
       >
         <DirectionAwareHover imageUrl={project.cover} className={styles.project}>
           <h4>{project.title}</h4>

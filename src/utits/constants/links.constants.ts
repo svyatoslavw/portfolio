@@ -8,6 +8,10 @@ export const links: IHeaderLink[] = [
     href: "#about"
   },
   {
+    label: "experience",
+    href: "#experience"
+  },
+  {
     label: "stack",
     href: "#stack"
   },

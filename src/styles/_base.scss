@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
 :root {
   display: flex;
   width: 100%;
@@ -49,5 +53,54 @@
 @supports not selector(::-webkit-scrollbar) {
   body {
     scrollbar-color: var(--scroll-thumb-color) var(--scroll-track-color);
+  }
+}
+//--------SELECTION--------//
+::selection {
+  background-color: #21023f;
+}
+//---------TIMELINE---------//
+.imageTimeline {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1169px) {
+  .image {
+    width: 40px;
+    height: 40px;
+  }
+}
+//---------PRELOADER---------//
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: #11071b;
+  background-image: url(/public/logo.svg);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: scale 1s infinite alternate;
+}
+
+#preloader-none {
+  opacity: 0;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
   }
 }

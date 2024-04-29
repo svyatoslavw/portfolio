@@ -11,12 +11,15 @@ interface Resources {
     "home": "Home",
     "about": "About me",
     "stack": "Stack",
-    "projects": "My projects"
+    "projects": "My projects",
+    "experience": "My Experience"
   },
   "headings": {
     "about": "About me",
     "stack": "Current stack",
-    "projects": "My projects"
+    "projects": "My projects",
+    "daysicode": "Days i code",
+    "experience": "My Experience"
   },
   "main": {
     "greeting": "Hi, I am",
