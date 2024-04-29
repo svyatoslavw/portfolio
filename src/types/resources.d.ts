@@ -14,6 +14,15 @@ interface Resources {
     "projects": "My projects",
     "experience": "My Experience"
   },
+  "experience": {
+  "points": {
+    "1": "Website design layout.",
+    "2": "Adaptation, cross-browser compatibility and protection of the site.",
+    "3": "Site optimization."
+  },
+  "date": "October 2023 - February 2024"
+}
+
   "headings": {
     "about": "About me",
     "stack": "Current stack",

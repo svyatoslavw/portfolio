@@ -1,3 +1,5 @@
+//FIXME:ПОФИКСИТЬ ПЕРЕВОД, СДЕЛАТЬ ВСЕ КАК НАДО
+import { useTranslation } from "react-i18next"
 import { useInView } from "react-intersection-observer"
 import { VerticalTimelineElement } from "react-vertical-timeline-component"
 import "react-vertical-timeline-component/style.min.css"
@@ -8,6 +10,8 @@ const ExperienceCard = ({ experience }: { experience: IExperience }) => {
   const { ref, inView } = useInView({
     triggerOnce: false
   })
+
+  const { t } = useTranslation("experience")
   return (
     <VerticalTimelineElement
       intersectionObserverProps={ref}
@@ -20,7 +24,7 @@ const ExperienceCard = ({ experience }: { experience: IExperience }) => {
         borderRadius: "12px"
       }}
       contentArrowStyle={{ borderRight: "7px solid #5a0b98" }}
-      date={experience.date}
+      date={t("date")}
       iconStyle={{ background: "#3a0f77", border: "none" }}
       icon={<img src={experience.icon} alt={experience.company_name} className="imageTimeline" />}
     >
@@ -30,9 +34,9 @@ const ExperienceCard = ({ experience }: { experience: IExperience }) => {
       </div>
 
       <ul className={styles.list}>
-        {experience.points.map((point, index) => (
-          <li key={point.length + index}>{point}</li>
-        ))}
+        <li>{t("points.1")}</li>
+        <li>{t("points.2")}</li>
+        <li>{t("points.3")}</li>
       </ul>
     </VerticalTimelineElement>
   )
