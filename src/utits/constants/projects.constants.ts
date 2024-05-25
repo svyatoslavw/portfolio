@@ -1,5 +1,19 @@
 export const frontend_projects = [
   {
+    title: "Excalidraw Clone",
+    cover: "/prog10.png",
+    link: "https://github.com/svyatoslavw/excalidraw-clone",
+    background: "bg-secondary",
+    stack: ["/ts.png", "/react.png", "/konva.png", "/sass.png"]
+  },
+  {
+    title: "Pc Builder",
+    cover: "/prog9.png",
+    link: "https://github.com/svyatoslavw/pc-builder",
+    background: "bg-primary",
+    stack: ["/ts.png", "/next.png", "supabase.png", "/tailwind.png", "/shadcn.png"]
+  },
+  {
     title: "Frontend Learning",
     cover: "/prog7.png",
     link: "https://github.com/svyatoslavw/expo-frontend-learning",

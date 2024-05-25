@@ -19,7 +19,7 @@ const ProjectList = () => {
             animation={animation}
             inView={inView}
             project={project}
-            key={project.title}
+            key={project.cover}
           />
         )
       })}
