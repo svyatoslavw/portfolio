@@ -1,0 +1,16 @@
+.skills {
+  padding-top: var(--padding-small);
+}
+
+.skills__list {
+  max-width: var(--max-skills-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--gap-skills);
+}
+
+.skills__list-item {
+  border-radius: var(--border-radius-small);
+}

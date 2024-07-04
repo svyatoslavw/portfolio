@@ -1,21 +1,11 @@
-import styles from "@/styles/modules/Footer.module.scss"
+import "./footer.css"
 
-const Footer = () => {
-  return (
-    <footer className={styles.footer}>
-      <small>
-        &copy; All rights reserved - Designed by{" "}
-        <a
-          className={styles.link}
-          href="https://github.com/svyatoslavw"
-          target="_blank"
-          rel="noreferrer noopenner"
-        >
-          svyatoslavw
-        </a>
-      </small>
-    </footer>
-  )
-}
+const Footer = () => (
+  <footer className="footer">
+    <a href="https://github.com/svyatoslavw" className="link footer__link">
+      Copyright &copy; Svyatoslavw 2024
+    </a>
+  </footer>
+)
 
-export { Footer }
+export default Footer

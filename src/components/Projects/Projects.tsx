@@ -1,17 +1,20 @@
-import { Heading } from "../ui/heading"
-import { SectionContainer } from "../ui/section-container"
-import { Ticker } from "../ui/ticker"
+import { frontend_projects } from "@/constants/projects.constants.js"
 
-import { ProjectList } from "./ProjectList"
+import ProjectCard from "./ProjectCard"
+import "./projects.css"
 
 const Projects = () => {
   return (
-    <SectionContainer id="projects">
-      <Heading title="projects" />
-      <ProjectList />
-      <Ticker />
-    </SectionContainer>
+    <section id="projects" className="section projects">
+      <h2 className="section__title">Projects</h2>
+
+      <ul className="projects__grid">
+        {frontend_projects.map((project, i) => (
+          <ProjectCard key={i} project={project} />
+        ))}
+      </ul>
+    </section>
   )
 }
 
-export { Projects }
+export default Projects

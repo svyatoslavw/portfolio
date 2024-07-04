@@ -1,0 +1,10 @@
+.contact {
+  flex-direction: column;
+  padding-top: var(--padding-large);
+}
+.contact__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
