@@ -1,11 +1,20 @@
-import "./footer.css"
+const Footer = () => {
+  const currentYear = new Date().getFullYear()
 
-const Footer = () => (
-  <footer className="footer">
-    <a href="https://github.com/svyatoslavw" className="link footer__link">
-      Copyright &copy; Svyatoslavw 2024
-    </a>
-  </footer>
-)
+  return (
+    <div className="flex flex-col gap-1 text-xs">
+      <h6>Ukraine {currentYear} © Sviatoslav. </h6>
+      <p>
+        Career Status -{" "}
+        <a
+          href="mailto:sviatoslavvww@gmail.com"
+          className="bg-foreground/80 px-1 font-medium text-background"
+        >
+          Open to offers
+        </a>
+      </p>
+    </div>
+  )
+}
 
 export default Footer

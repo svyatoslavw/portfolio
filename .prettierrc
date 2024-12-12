@@ -10,23 +10,18 @@
   "arrowParens": "always",
   "importOrder": [
     "<THIRD_PARTY_MODULES>",
-    "^@/components/(.*)$",
-    "^@/layout/(.*)$",
-    "^@/ui/(.*)$",
-    "^@/providers/(.*)$",
-    "^@/constants/(.*)$",
-    "^@/types/(.*)$",
-    "^@/assets/(.*)$",
-    "^@/config/(.*)$",
-    "^@/store/(.*)$",
-    "^@/hooks/(.*)$",
-    "^@/utils/(.*)$",
-    "^@/api/(.*)$",
+    "^./src/(.*)$",
+    "^@app/(.*)$",
+    "^@entities/(.*)$",
+    "^@pages/(.*)$",
+    "^@shared/(.*)$",
+    "^@widgets/(.*)$",
+    "^@features/(.*)$",
     "^../(.*)",
     "^./(.*)",
-    "(.scss)$"
+    "^[./]"
   ],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
-  "plugins": ["@trivago/prettier-plugin-sort-imports"]
+  "plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"]
 }
