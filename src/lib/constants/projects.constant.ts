@@ -101,16 +101,5 @@ export const projects: IProject[] = [
       "postgres",
       "react-hook-form"
     ]
-  },
-  {
-    name: "React Project",
-    deployment: {
-      isEnabled: false,
-      href: ""
-    },
-    image: "/projects/6.png",
-    repository: "https://github.com/svyatoslavw/react-project",
-    about: "A React project with a complex UI and a login system",
-    techStack: ["react", "typescript", "css modules", "react-router-dom"]
   }
 ]

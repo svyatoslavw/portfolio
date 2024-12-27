@@ -43,13 +43,13 @@ const ProjectItem = ({ project }: { project: IProject }) => {
         <TabsContent value="tech-stack">
           <pre className="flex flex-wrap gap-2">
             {project.techStack.map((tech) => (
-              <code key={tech} className="bg-secondary rounded p-0.5 text-sm font-semibold">
+              <code key={tech} className="rounded bg-secondary p-0.5 text-sm font-semibold">
                 {tech}
               </code>
             ))}
           </pre>
         </TabsContent>
-        <TabsContent value="about" className="text-sm">
+        <TabsContent value="about" className="text-sm font-semibold">
           {project.about}
         </TabsContent>
       </Tabs>

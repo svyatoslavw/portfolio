@@ -1,6 +1,12 @@
+import { Metadata } from "next"
+
 import { ProjectItem } from "@/components/ProjectList/ProjectItem"
 import { Divider } from "@/components/ui"
 import { projects } from "@/lib/constants"
+
+export const metadata: Metadata = {
+  title: "Projects"
+}
 
 export default function PortfolioPage() {
   return (
