@@ -5,7 +5,7 @@ export const projects: IProject[] = [
     name: "Resume Builder App",
     deployment: {
       isEnabled: true,
-      href: "https://rndmcv.vercel.app"
+      href: "https://rndmcv.com"
     },
     image: "/projects/1.png",
     repository: "https://github.com/svyatoslavw/rndmcv-app",
